@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrainrotBags.de — Stivan Lucky Block (Produktinformation)</title>
+
+  <style>
+    /* Place w95fa.woff in same folder as this HTML file.
+       If you have a different filename or format change the URL. */
+    @font-face {
+      font-family: "w95fa";
+      src: url("./w95fa.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Fallbacks if the font file isn't present */
+    :root {
+      --bg: #cfcfcf;
+      --panel: #efefef;
+      --navy: #001f5b;
+      --muted: #4a4a4a;
+      --accent: #0078d7;
+      --frame-shadow: rgba(0,0,0,0.28);
+      --border: #000;
+    }
+
+    html,body{height:100%; margin:0; background:linear-gradient(#dddddd,#cfcfcf); font-family: "w95fa", "Segoe UI", "Arial", sans-serif; color:#000;}
+    .wrap{
+      max-width:1024px;
+      margin:34px auto;
+      padding:14px;
+    }
+
+    /* "Official" window frame */
+    .window {
+      border:3px solid var(--border);
+      background:var(--panel);
+      box-shadow: 8px 8px 0 var(--frame-shadow);
+    }
+
+    .titlebar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:8px 12px;
+      background: linear-gradient(180deg, #000050, #000028);
+      color:white;
+      border-bottom:3px solid var(--border);
+    }
+    .brand {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      font-weight:700;
+      letter-spacing:0.4px;
+      font-size:18px;
+    }
+    .logo {
+      width:34px;
+      height:22px;
+      background:linear-gradient(135deg,#ffdede,#ffb8b8);
+      border:2px solid #000;
+      box-shadow: inset 0 1px rgba(255,255,255,0.4);
+      display:inline-block;
+    }
+    .nav-actions { font-size:13px; opacity:0.95; }
+
+    .content {
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:18px;
+      padding:18px;
+    }
+
+    /* left column — product card */
+    .card {
+      border:2px solid #000;
+      background:#fff;
+      padding:12px;
+    }
+    .img-placeholder{
+      width:100%;
+      height:300px;
+      border:2px dashed #888;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:10px;
+      background:linear-gradient(180deg,#fafafa,#f0f0f0);
+    }
+    .meta { font-size:13px; color:var(--muted); line-height:1.5; }
+
+    .buy-strip {
+      margin-top:12px;
+      padding:10px;
+      border-top:2px solid #000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:8px;
+    }
+    .price {
+      font-weight:800;
+      font-size:20px;
+    }
+    .cta {
+      background:var(--accent);
+      color:white;
+      padding:8px 12px;
+      border-radius:4px;
+      text-decoration:none;
+      font-weight:700;
+      border:2px solid #000;
+      box-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+    }
+
+    /* right column — product info text area */
+    .info {
+      border:2px solid #000;
+      background: linear-gradient(180deg,#ffffff,#f6f6f6);
+      padding:12px;
+      min-height:360px;
+      white-space:pre-wrap;
+    }
+
+    /* Styling the boxed text to look like your provided block */
+    .monoslab{
+      font-family: "w95fa", monospace, "Courier New", monospace;
+      font-size:14px;
+      line-height:1.45;
+      color:#000;
+    }
+
+    /* footer */
+    .footer {
+      margin-top:12px;
+      padding:10px 14px;
+      border-top:3px solid #000;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:linear-gradient(180deg,#f3f3f3,#eaeaea);
+    }
+    .muted { color:var(--muted); font-size:13px; }
+
+    /* responsive */
+    @media (max-width:900px){
+      .content{ grid-template-columns: 1fr; }
+      .img-placeholder{height:220px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="window" role="region" aria-label="BrainrotBags Produktseite">
+      <div class="titlebar">
+        <div class="brand">
+          <span class="logo" aria-hidden="true"></span>
+          <span>BrainrotBags.de</span>
+        </div>
+        <div class="nav-actions">
+          Offizieller Vertrieb — Produktseite
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- left: product card -->
+        <aside class="card" aria-labelledby="product-title">
+          <div id="product-title" style="font-weight:800; font-size:18px; margin-bottom:8px;">Stivan Lucky Block</div>
+          <div class="img-placeholder" role="img" aria-label="Produktbild: Stivan Lucky Block">
+            Produktbild (Platzhalter)
+          </div>
+
+          <div class="meta">
+            <div><strong>Modell:</strong> Mystery Pixel Sammelserie 1</div>
+            <div><strong>Hersteller:</strong> BrainrotBags.de</div>
+            <div><strong>Altersempfehlung:</strong> 6+</div>
+            <div style="margin-top:8px;"><strong>Strichcode-ID:</strong> BRB-933-22-5</div>
+          </div>
+
+          <div class="buy-strip" aria-hidden="true">
+            <div class="price">€6,99</div>
+            <a class="cta" href="#" onclick="alert('Dies ist nur eine Demo-Seite.'); return false;">In den Warenkorb</a>
+          </div>
+        </aside>
+
+        <!-- right: info block -->
+        <main class="info monoslab" aria-labelledby="info-heading">
+          <div id="info-heading" style="font-weight:800; font-size:16px; margin-bottom:8px;">PRODUKTINFORMATION</div>
+
+─────────────────────────────────────────────  
+                      PRODUKTINFORMATION  
+─────────────────────────────────────────────  
+
+Hersteller:                  BrainrotBags.de  
+Modell:                       Mystery Pixel Sammelserie 1  
+Altersempfehlung:             6+  
+Material:                     Hochwertige Papier-/Plastik-Hybridverpackung  
+Strichcode-ID:                 BRB-933-22-5  
+
+─────────────────────────────────────────────  
+                            WARNHINWEISE  
+─────────────────────────────────────────────  
+
+• Enthält kleine Teile. Erstickungsgefahr.    
+• Nicht essen, kauen oder verschlucken.    
+• Von Hitzequellen und offenem Feuer fernhalten.    
+• Nicht geeignet für Kinder unter 3 Jahren.  
+
+─────────────────────────────────────────────  
+                              HINWEISE  
+─────────────────────────────────────────────  
+
+• Farben, Designs und Inhalte können variieren.    
+• Jedes Paket enthält 1 zufällige Figur.    
+• Kein Umtausch oder Rückgabe nach Öffnung der Verpackung.    
+
+─────────────────────────────────────────────  
+                             VERTRIEB  
+─────────────────────────────────────────────  
+
+Verpackt und zusammengestellt von: Stivan Co.    
+Exklusive Schul-Edition — Nicht zum Weiterverkauf bestimmt.  
+
+─────────────────────────────────────────────  
+© 2025 BrainrotBags.de. Alle Rechte vorbehalten.  
+─────────────────────────────────────────────
+
+        </main>
+      </div>
+
+      <div class="footer">
+        <div class="muted">BrainrotBags.de — Offizielle Produktinformation</div>
+        <div class="muted">Kontakt: support@brainrotbags.de</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
