@@ -6,8 +6,6 @@
   <title>BrainrotBags.de — Stivan Lucky Block (Produktinformation)</title>
 
   <style>
-    /* Place w95fa.woff in same folder as this HTML file.
-       If you have a different filename or format change the URL. */
     @font-face {
       font-family: "w95fa";
       src: url("./w95fa.woff") format("woff");
@@ -16,7 +14,6 @@
       font-display: swap;
     }
 
-    /* Fallbacks if the font file isn't present */
     :root {
       --bg: #cfcfcf;
       --panel: #efefef;
@@ -28,131 +25,30 @@
     }
 
     html,body{height:100%; margin:0; background:linear-gradient(#dddddd,#cfcfcf); font-family: "w95fa", "Segoe UI", "Arial", sans-serif; color:#000;}
-    .wrap{
-      max-width:1024px;
-      margin:34px auto;
-      padding:14px;
-    }
+    .wrap{ max-width:1024px; margin:34px auto; padding:14px; }
 
-    /* "Official" window frame */
-    .window {
-      border:3px solid var(--border);
-      background:var(--panel);
-      box-shadow: 8px 8px 0 var(--frame-shadow);
-    }
-
-    .titlebar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:8px 12px;
-      background: linear-gradient(180deg, #000050, #000028);
-      color:white;
-      border-bottom:3px solid var(--border);
-    }
-    .brand {
-      display:flex;
-      gap:12px;
-      align-items:center;
-      font-weight:700;
-      letter-spacing:0.4px;
-      font-size:18px;
-    }
-    .logo {
-      width:34px;
-      height:22px;
-      background:linear-gradient(135deg,#ffdede,#ffb8b8);
-      border:2px solid #000;
-      box-shadow: inset 0 1px rgba(255,255,255,0.4);
-      display:inline-block;
-    }
+    .window { border:3px solid var(--border); background:var(--panel); box-shadow: 8px 8px 0 var(--frame-shadow); }
+    .titlebar{ display:flex; align-items:center; justify-content:space-between; padding:8px 12px; background: linear-gradient(180deg, #000050, #000028); color:white; border-bottom:3px solid var(--border); }
+    .brand { display:flex; gap:12px; align-items:center; font-weight:700; letter-spacing:0.4px; font-size:18px; }
+    .logo { width:34px; height:22px; background:linear-gradient(135deg,#ffdede,#ffb8b8); border:2px solid #000; box-shadow: inset 0 1px rgba(255,255,255,0.4); display:inline-block; }
     .nav-actions { font-size:13px; opacity:0.95; }
 
-    .content {
-      display:grid;
-      grid-template-columns: 360px 1fr;
-      gap:18px;
-      padding:18px;
-    }
+    .content { display:grid; grid-template-columns: 360px 1fr; gap:18px; padding:18px; }
 
-    /* left column — product card */
-    .card {
-      border:2px solid #000;
-      background:#fff;
-      padding:12px;
-    }
-    .img-placeholder{
-      width:100%;
-      height:300px;
-      border:2px dashed #888;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:14px;
-      color:var(--muted);
-      margin-bottom:10px;
-      background:linear-gradient(180deg,#fafafa,#f0f0f0);
-    }
-    .meta { font-size:13px; color:var(--muted); line-height:1.5; }
+    .card { border:2px solid #000; background:#fff; padding:12px; }
+    .meta { font-size:13px; color:var(--muted); line-height:1.5; margin-bottom:10px; }
 
-    .buy-strip {
-      margin-top:12px;
-      padding:10px;
-      border-top:2px solid #000;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:8px;
-    }
-    .price {
-      font-weight:800;
-      font-size:20px;
-    }
-    .cta {
-      background:var(--accent);
-      color:white;
-      padding:8px 12px;
-      border-radius:4px;
-      text-decoration:none;
-      font-weight:700;
-      border:2px solid #000;
-      box-shadow: 2px 2px 0 rgba(0,0,0,0.25);
-    }
+    .buy-strip { margin-top:12px; padding:10px; border-top:2px solid #000; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+    .price { font-weight:800; font-size:20px; }
 
-    /* right column — product info text area */
-    .info {
-      border:2px solid #000;
-      background: linear-gradient(180deg,#ffffff,#f6f6f6);
-      padding:12px;
-      min-height:360px;
-      white-space:pre-wrap;
-    }
+    .cta { background:var(--accent); color:white; padding:8px 12px; border-radius:4px; text-decoration:none; font-weight:700; border:2px solid #000; box-shadow: 2px 2px 0 rgba(0,0,0,0.25); }
 
-    /* Styling the boxed text to look like your provided block */
-    .monoslab{
-      font-family: "w95fa", monospace, "Courier New", monospace;
-      font-size:14px;
-      line-height:1.45;
-      color:#000;
-    }
+    .info { border:2px solid #000; background: linear-gradient(180deg,#ffffff,#f6f6f6); padding:12px; min-height:360px; white-space:pre-wrap; font-family: "w95fa", monospace, "Courier New", monospace; font-size:14px; line-height:1.45; color:#000; }
 
-    /* footer */
-    .footer {
-      margin-top:12px;
-      padding:10px 14px;
-      border-top:3px solid #000;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      background:linear-gradient(180deg,#f3f3f3,#eaeaea);
-    }
+    .footer { margin-top:12px; padding:10px 14px; border-top:3px solid #000; display:flex; justify-content:space-between; align-items:center; background:linear-gradient(180deg,#f3f3f3,#eaeaea); }
     .muted { color:var(--muted); font-size:13px; }
 
-    /* responsive */
-    @media (max-width:900px){
-      .content{ grid-template-columns: 1fr; }
-      .img-placeholder{height:220px}
-    }
+    @media (max-width:900px){ .content{ grid-template-columns: 1fr; } .img-placeholder{height:220px} }
   </style>
 </head>
 
@@ -170,13 +66,20 @@
       </div>
 
       <div class="content">
-        <!-- left: product card -->
+        <!-- LEFT COLUMN: PRODUCT CARD -->
         <aside class="card" aria-labelledby="product-title">
-          <div id="product-title" style="font-weight:800; font-size:18px; margin-bottom:8px;">Stivan Lucky Block</div>
-          <div class="img-placeholder" role="img" aria-label="Produktbild: Stivan Lucky Block">
-            Produktbild (Platzhalter)
+          <div id="product-title" style="font-weight:800; font-size:18px; margin-bottom:8px;">
+            Stivan Lucky Block
           </div>
 
+          <!-- PRODUCT IMAGE -->
+          <div style="width:100%; border:2px solid #000; margin-bottom:10px;">
+            <img src="https://i.ibb.co/bgyqX8qQ/Untitled17-20251205172721.png"
+                 alt="Stivan Lucky Block Produktbild"
+                 style="width:100%; display:block;">
+          </div>
+
+          <!-- META INFO -->
           <div class="meta">
             <div><strong>Modell:</strong> Mystery Pixel Sammelserie 1</div>
             <div><strong>Hersteller:</strong> BrainrotBags.de</div>
@@ -184,14 +87,21 @@
             <div style="margin-top:8px;"><strong>Strichcode-ID:</strong> BRB-933-22-5</div>
           </div>
 
-          <div class="buy-strip" aria-hidden="true">
-            <div class="price">€6,99</div>
-            <a class="cta" href="#" onclick="alert('Dies ist nur eine Demo-Seite.'); return false;">In den Warenkorb</a>
+          <!-- DISCOUNT STRIP -->
+          <div class="buy-strip" style="background:#fff5cc; border-top:2px solid #000;">
+            <div>
+              <div style="text-decoration:line-through; color:#555; font-size:14px;">€6,99</div>
+              <div class="price" style="color:#008000;">KOSTENLOS</div>
+            </div>
+
+            <a class="cta" href="#" onclick="alert('Produkt kostenlos hinzugefügt! (Demo)'); return false;">
+              GRATIS BEKOMMEN
+            </a>
           </div>
         </aside>
 
-        <!-- right: info block -->
-        <main class="info monoslab" aria-labelledby="info-heading">
+        <!-- RIGHT COLUMN: PRODUCT INFO -->
+        <main class="info" aria-labelledby="info-heading">
           <div id="info-heading" style="font-weight:800; font-size:16px; margin-bottom:8px;">PRODUKTINFORMATION</div>
 
 ─────────────────────────────────────────────  
